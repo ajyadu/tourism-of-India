@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism in India</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('your-image-url.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 20px;
+            color: #fff; /* Text color */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.8); /* White background with transparency */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .fact-display {
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+            text-align: center;
+            color: #333; /* Dark text for readability */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tourism in India</h1>
+        <div class="button-container">
+            <button onclick="showFact(1)">Fact 1</button>
+            <button onclick="showFact(2)">Fact 2</button>
+            <button onclick="showFact(3)">Fact 3</button>
+            <button onclick="showFact(4)">Fact 4</button>
+            <button onclick="showFact(5)">Fact 5</button>
+            <button onclick="showFact(6)">Fact 6</button>
+            <button onclick="showFact(7)">Fact 7</button>
+            <button onclick="showFact(8)">Fact 8</button>
+            <button onclick="showFact(9)">Fact 9</button>
+            <button onclick="showFact(10)">Fact 10</button>
+        </div>
+        <div id="factDisplay" class="fact-display"></div>
+    </div>
+    <script>
+        const facts = [
+            "India is home to 40 UNESCO World Heritage Sites, including the Taj Mahal, Qutub Minar, and the Red Fort, showcasing its rich cultural heritage.",
+            "India is known as a spiritual destination with numerous pilgrimage sites, including Varanasi, Rishikesh, and Bodh Gaya, attracting millions of spiritual seekers each year.",
+            "India has over 500 wildlife sanctuaries and 50 national parks, including the famous Jim Corbett National Park and Ranthambore National Park, making it a hotspot for wildlife enthusiasts.",
+            "Indian cuisine is incredibly diverse, with each region offering unique dishes and flavors. Culinary tourism is a growing trend, with food tours becoming popular.",
+            "India celebrates a multitude of festivals throughout the year, such as Diwali, Holi, Eid, and Christmas, attracting tourists who want to experience the vibrant culture and traditions.",
+            "The country offers various adventure activities, including trekking in the Himalayas, river rafting in Rishikesh, and desert safaris in Rajasthan.",
+            "India is known for its ancient healing practices, including Ayurveda and yoga. Wellness tourism is on the rise, with many travelers seeking retreats and holistic healing experiences.",
+            "With 22 officially recognized languages and numerous ethnic groups, India's cultural diversity is a major draw for tourists interested in exploring different traditions and lifestyles.",
+            "India has a rich history, with numerous forts, palaces, and ancient ruins, such as the forts of Rajasthan and the ruins of Hampi, attracting history buffs from around the world.",
+            "The tourism sector is a significant contributor to India's economy, accounting for about 9.2% of the GDP and providing millions of jobs in various related industries."
+        ];
+
+        function showFact(index) {
+            const factDisplay = document.getElementById('factDisplay');
+            factDisplay.innerHTML = `<p>${facts[index - 1]}</p>`;
+        }
+    </script>
+</body>
+</html>
